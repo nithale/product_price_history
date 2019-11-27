@@ -1,0 +1,4 @@
+# dotfiles
+.*
+!.gitignore
+!.mailmap

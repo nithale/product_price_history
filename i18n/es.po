@@ -1,0 +1,195 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* product_price_history
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.4\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2019-01-22 20:30+0000\n"
+"PO-Revision-Date: 2019-01-22 20:30+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_price_history
+#: help:product.price.history,supplier_id:0
+msgid "Supplier of this product"
+msgstr "Proveedor de este producto"
+
+#. module: product_price_history
+#: help:product.price.history,actual_dolar_price:0
+msgid "Official company dolar rate associted with the current currency used by the company"
+msgstr "Valor del dolar usado por la compañia para sus proyecciones"
+
+#. module: product_price_history
+#: constraint:res.company:0
+msgid "Error! You can not create recursive companies."
+msgstr "Error! No puede crear compañias recursivas."
+
+#. module: product_price_history
+#: field:product.price.history,cost:0
+msgid "Cost Price"
+msgstr "Precio de Costo"
+
+#. module: product_price_history
+#: help:product.price.history,purchase_order_line_id:0
+msgid "Associated whit the product purchase"
+msgstr "Asociado con la compra del producto"
+
+#. module: product_price_history
+#: constraint:product.template:0
+msgid "Error: The default UOM and the purchase UOM must be in the same category."
+msgstr "Error: La UDM por defecto y la UDM de compra debe ser de la misma
+categoria."
+
+#. module: product_price_history
+#: field:product.price.history,supplier_id:0
+msgid "Supplier"
+msgstr "Proveedor"
+
+#. module: product_price_history
+#: field:product.price.history,purchase_order_line_id:0
+msgid "Order Reference"
+msgstr "Referencia a Orden"
+
+#. module: product_price_history
+#: constraint:res.currency:0
+msgid "The rounding factor cannot be 0 !"
+msgstr "El factor de redondeo no puede ser 0 !"
+
+#. module: product_price_history
+#: model:ir.model,name:product_price_history.model_product_product
+#: field:product.price.history,product_id:0
+msgid "Product"
+msgstr "Producto"
+
+#. module: product_price_history
+#: field:product.price.history,actual_cost:0
+msgid "Actual Cost"
+msgstr "Costo Actual"
+
+#. module: product_price_history
+#: field:product.price.history,actual_dolar_price:0
+msgid "Actual Dolar Price"
+msgstr "Precio Actual del Dolar"
+
+#. module: product_price_history
+#: field:product.price.history,date:0
+msgid "Date"
+msgstr "Fecha"
+
+#. module: product_price_history
+#: field:res.currency,company_dolar_rate:0
+msgid "Company Dolar Rate"
+msgstr "Tasa de Dolar de Compañia"
+
+#. module: product_price_history
+#: view:product.product:0
+msgid "Price History"
+msgstr "Historia de Precios"
+
+#. module: product_price_history
+#: field:product.price.history,actual_cost_currency:0
+msgid "Actual Cost Currency"
+msgstr "Moneda Actual"
+
+#. module: product_price_history
+#: view:product.product:0
+msgid "Purchase Description"
+msgstr "Descripcion de Compra"
+
+#. module: product_price_history
+#: help:product.price.history,dolar_price:0
+msgid "Dolar Price associated with the cost date"
+msgstr "Precio del dolar asociado con la fecha de costo"
+
+#. module: product_price_history
+#: view:res.currency.rate:0
+msgid "Search"
+msgstr "Busqueda"
+
+#. module: product_price_history
+#: field:product.product,max_actual_cost:0
+msgid "Max Actual Cost"
+msgstr "Costo Actual Maximo"
+
+#. module: product_price_history
+#: model:ir.model,name:product_price_history.model_res_company
+msgid "Companies"
+msgstr "Compañias"
+
+#. module: product_price_history
+#: model:ir.model,name:product_price_history.model_product_price_history
+msgid "product.price.history"
+msgstr "product.price.history"
+
+#. module: product_price_history
+#: help:product.price.history,actual_cost_currency:0
+msgid "Can be different from the cost currency"
+msgstr "Puede ser distinto a la moneda del costo"
+
+#. module: product_price_history
+#: field:product.product,avg_actual_cost:0
+msgid "Average Actual Price"
+msgstr "Precio Actual Promedio"
+
+#. module: product_price_history
+#: field:product.price.history,dolar_price:0
+msgid "Dolar Price"
+msgstr "Precio del Dolar"
+
+#. module: product_price_history
+#: help:product.price.history,actual_cost:0
+msgid "Cost estimated up to date using the Actual Dolar Rate"
+msgstr "Costo estimado en la actualidad usando la tasa actual del dolar"
+
+#. module: product_price_history
+#: field:product.price.history,cost_currency:0
+msgid "Cost Currency"
+msgstr "Moneda del Costo"
+
+#. module: product_price_history
+#: model:ir.model,name:product_price_history.model_product_template
+msgid "Product Template"
+msgstr "Plantilla del Producto"
+
+#. module: product_price_history
+#: help:product.price.history,cost_currency:0
+msgid "The currency used for product purchase"
+msgstr "La moneda usada para la compra del producto"
+
+#. module: product_price_history
+#: view:res.currency.rate:0
+msgid "Currency Rates"
+msgstr "Tasas de Monedas"
+
+#. module: product_price_history
+#: model:ir.model,name:product_price_history.model_dolar_price_history
+msgid "dolar.price.history"
+msgstr "dolar.price.history"
+
+#. module: product_price_history
+#: model:ir.model,name:product_price_history.model_res_currency
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: product_price_history
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Error: Código ean invalido"
+
+#. module: product_price_history
+#: view:product.product:0
+#: field:product.product,product_history:0
+msgid "Cost History"
+msgstr "Historial de Costos"
+
+#. module: product_price_history
+#: model:ir.actions.act_window,name:product_price_history.act_currency_2_currency_rate
+msgid "Currency Rate"
+msgstr "Tasa de Moneda"
+

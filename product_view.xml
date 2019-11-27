@@ -1,0 +1,117 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data>
+	<record model="ir.ui.view" id="view_product_product_price_history_form">
+	    <field name="name">product.product.price.history.form</field>
+	    <field name="model">product.product</field>
+	    <field name="inherit_id" ref="product.product_normal_form_view" />
+	    <field name="type">form</field>
+	    <field name="arch" type="xml">
+		<notebook position="inside">
+		    <page string="Price History">
+			<field name='max_actual_cost' />
+			<field name='avg_actual_cost' />
+			<field colspan="4" mode="tree,form" name="product_history" nolabel="1" widget="one2many_list">
+			    <form string="Cost History" editable="bottom">
+				<field name="supplier_id" />
+				<field name="product_id" invisible="1"/>
+				<field name="purchase_order_line_id" 
+				    context="{'search_default_product_id': [product_id or null], 'default_product_id': product_id or null}" />
+				<!--context="{'code': self, 'default_product_id': active_id}" /-->
+				<field name="date" />
+				<newline/>
+				<field name="cost" />
+				<field name="cost_currency" />
+				<field name="dolar_price" />
+				<newline/>
+				<field name="actual_dolar_price"/>
+				<field name="actual_cost" />
+				<field name="actual_cost_currency"/>
+			    </form>
+
+			    <tree string="Cost History" editable="bottom">
+				<field name="supplier_id" />
+				<field name="product_id" invisible="1"/>
+				<field name="purchase_order_line_id" 
+				    context="{'search_default_product_id': [product_id or null], 'default_product_id': product_id or null}" />
+				<field name="date" widget="date" width="135"/>
+				<field name="cost" />
+				<field name="cost_currency" />
+				<field name="dolar_price" />
+				<field name="actual_dolar_price"/>
+				<field name="actual_cost" avg="Avarage Cost"/>
+				<field name="actual_cost_currency"/>
+			    </tree>
+			</field>
+			<separator string="Purchase Description"/>
+			<field colspan="4" name="description_purchase" nolabel="1"/>
+		    </page>
+		</notebook>
+	    </field>
+	</record>
+	<record model="ir.ui.view" id="inherited_view_currency_form">
+	    <field name="name">inherited.view.currency.form.</field>
+	    <field name="model">res.currency</field>
+	    <field name="type">form</field>
+	    <field name="inherit_id" ref="base.view_currency_form"/>
+	    <field name="arch" type="xml">
+		<field name="rate" position="after">
+		    <field name="company_dolar_rate" />
+		</field>
+	    </field>
+	</record>
+
+	<!-- act_currency_2_currency_rate -->
+        <record id="view_res_currency_rate_search" model="ir.ui.view">
+            <field name="name">res.currency.rate.search</field>
+            <field name="model">res.currency.rate</field>
+            <field name="type">search</field>
+            <field name="arch" type="xml">
+                <search string="Search">
+                    <field name="name" />
+                    <field name="rate" />
+                    <field name="currency_id" />
+                </search>
+            </field>
+        </record>
+        
+        <record id="view_res_currency_rate_tree" model="ir.ui.view">
+            <field name="name">res.currency.rate.tree</field>
+            <field name="model">res.currency.rate</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Currency Rates">
+                    <field name="name" />
+                    <field name="rate" />
+                    <field name="currency_id" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_res_currency_rate_form" model="ir.ui.view">
+            <field name="name">res.currency.rate.form</field>
+            <field name="model">res.currency.rate</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Currency Rates">
+                    <field name="currency_id" />
+                    <newline/>
+                    <field name="name" />
+                    <field name="rate" />
+                </form>
+            </field>
+        </record>
+
+
+        <act_window
+	    context="{'search_default_currency_id':[active_id]}"
+            id="act_currency_2_currency_rate"
+            name="Currency Rate"
+            res_model="res.currency.rate"
+	    groups="base.group_extended"
+            src_model="res.currency" />
+	    <!-- domain="[('currency_id', '=', active_id)]"-->
+       
+    </data>
+</openerp>
+

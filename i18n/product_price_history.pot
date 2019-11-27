@@ -1,0 +1,151 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* product_price_history
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 6.0.4\n"
+"Report-Msgid-Bugs-To: support@openerp.com\n"
+"POT-Creation-Date: 2018-09-24 04:24+0000\n"
+"PO-Revision-Date: 2018-09-24 04:24+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_price_history
+#: field:dolar.price.history,min_dp:0
+msgid "Min Dolar Price"
+msgstr "Min Dolar Price"
+
+#. module: product_price_history
+#: model:ir.actions.act_window,name:product_price_history.dolar_price_history_action
+msgid "Dolar Price History"
+msgstr "Dolar Price History"
+
+#. module: product_price_history
+#: constraint:res.company:0
+msgid "Error! You can not create recursive companies."
+msgstr "Error! You can not create recursive companies."
+
+#. module: product_price_history
+#: view:dolar.price.history:0
+msgid "Search"
+msgstr "Search"
+
+#. module: product_price_history
+#: model:ir.model,name:product_price_history.model_product_product
+#: field:product.price.history,product_id:0
+msgid "Product"
+msgstr "Product"
+
+#. module: product_price_history
+#: field:product.price.history,company_id:0
+#: field:product.product,company_id:0
+msgid "Company"
+msgstr "Company"
+
+#. module: product_price_history
+#: field:dolar.price.history,date:0
+#: field:product.price.history,date:0
+msgid "Date"
+msgstr "Date"
+
+#. module: product_price_history
+#: model:ir.ui.menu,name:product_price_history.dolar_price_history
+msgid "Dolar History"
+msgstr "Dolar History"
+
+#. module: product_price_history
+#: view:product.product:0
+msgid "Price History"
+msgstr "Price History"
+
+#. module: product_price_history
+#: model:ir.model,name:product_price_history.model_product_template
+msgid "Product Template"
+msgstr "Product Template"
+
+#. module: product_price_history
+#: constraint:product.template:0
+msgid "Error: The default UOM and the purchase UOM must be in the same category."
+msgstr "Error: The default UOM and the purchase UOM must be in the same category."
+
+#. module: product_price_history
+#: model:ir.model,name:product_price_history.model_res_company
+msgid "Companies"
+msgstr "Companies"
+
+#. module: product_price_history
+#: model:ir.model,name:product_price_history.model_product_price_history
+msgid "product.price.history"
+msgstr "product.price.history"
+
+#. module: product_price_history
+#: field:dolar.price.history,mean_dp:0
+msgid "Mean Value Dolar Price"
+msgstr "Mean Value Dolar Price"
+
+#. module: product_price_history
+#: field:dolar.price.history,stdev_dp:0
+msgid "Est Deviation Dolar Price"
+msgstr "Est Deviation Dolar Price"
+
+#. module: product_price_history
+#: field:product.price.history,dolar_price:0
+msgid "Dolar Price"
+msgstr "Dolar Price"
+
+#. module: product_price_history
+#: view:dolar.price.history:0
+msgid "History"
+msgstr "History"
+
+#. module: product_price_history
+#: field:product.price.history,e_cost_bss:0
+msgid "Estimated Cost BsS"
+msgstr "Estimated Cost BsS"
+
+#. module: product_price_history
+#: field:product.price.history,cost_bsf:0
+msgid "Cost Price BsF"
+msgstr "Cost Price BsF"
+
+#. module: product_price_history
+#: model:ir.model,name:product_price_history.model_dolar_price_history
+msgid "dolar.price.history"
+msgstr "dolar.price.history"
+
+#. module: product_price_history
+#: field:product.price.history,e_cost_bsf:0
+msgid "Estimated Cost BsF"
+msgstr "Estimated Cost BsF"
+
+#. module: product_price_history
+#: constraint:product.product:0
+msgid "Error: Invalid ean code"
+msgstr "Error: Invalid ean code"
+
+#. module: product_price_history
+#: view:product.product:0
+#: field:product.product,product_history:0
+msgid "Cost History"
+msgstr "Cost History"
+
+#. module: product_price_history
+#: view:product.product:0
+msgid "Dolar Today"
+msgstr "Dolar Today"
+
+#. module: product_price_history
+#: field:product.price.history,cost_bss:0
+msgid "Cost Price BsS"
+msgstr "Cost Price BsS"
+
+#. module: product_price_history
+#: field:res.company,reference_dolar_price:0
+msgid "Dolar Referential Price"
+msgstr "Dolar Referential Price"
+
